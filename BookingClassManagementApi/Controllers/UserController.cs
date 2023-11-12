@@ -93,7 +93,7 @@ namespace BookingClassManagementApi.Controllers
             }
             return Ok(new
             {
-                Status = false,
+                Status = true,
                 Message = "success",
                 Data= JsonSerializer.Serialize(res)
             });

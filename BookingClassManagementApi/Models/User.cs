@@ -18,5 +18,7 @@ namespace BookingClassManagementApi.Models
         //one to many
         [JsonIgnore]
         public List<Package>? Packages { get;}
+        [JsonIgnore]
+        public List<UserPaymentCard>? UserPaymentCards { get; }
     }
 }

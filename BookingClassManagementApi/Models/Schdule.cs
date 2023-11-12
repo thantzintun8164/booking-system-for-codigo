@@ -8,10 +8,8 @@ namespace BookingClassManagementApi.Models
         public int SchduleId { get; set; }
         public string SchduleName { get;}
         public DateTime FromDate { get; set; }
-        public string FromTime { get; set; }
         public DateTime ToDate { get; set; }
-        public string ToTime { get; set; }
-        
+        public string? StartTime { get; set; } // eg: 10AM
         [ForeignKey("Class")]
         public int ClassId { get; set; }
         public virtual Class? Class { get; set; }
